@@ -1,5 +1,6 @@
 from tkinter import *
 import math
+from playsound import playsound
 # ---------------------------- CONSTANTS ------------------------------- #
 PINK = "#e2979c"
 RED = "#e7305b"
@@ -32,12 +33,16 @@ def start_timer():
     if reps % 8 == 0:
         count_down(long_break_sec)
         timer_label.config(text="Break", fg=RED)
+        playsound("notify.wav")
     elif reps % 2 == 0:
         count_down(short_break_sec)
         timer_label.config(text="Break", fg=PINK)
+        playsound("notify.wav")
     else:
         count_down(work_sec)
         timer_label.config(text="Work", fg=GREEN)
+        playsound("notify.wav")
+
 
 
 # ---------------------------- COUNTDOWN MECHANISM ------------------------------- # 
