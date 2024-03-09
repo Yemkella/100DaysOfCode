@@ -1,0 +1,83 @@
+{% include "header.html" %}
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('{{post.image_url}}')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1>{{post.title}}</h1>
+                            <h2 class="subheading">{{post.subtitle}}</h2>
+                            <span class="meta">
+                                Posted by
+                                <a href="#">{{post.author}}</a>
+                                on {{post.date}}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p>
+                            {{post.body}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <hr>
+        <!-- Pictures-->
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5 my-5">
+            <div class="col">
+              <div class="h-100" style="background-image: url('unsplash-photo-1.jpg');">
+                <div class="d-flex flex-column h-100 p-3 pb-3 text-shadow-1">
+                  <img src="{{ post.image_1 }}">
+                </div>
+              </div>
+            </div>
+      
+            <div class="col">
+              <div class="h-100" style="background-image: url('unsplash-photo-2.jpg');">
+                <div class="d-flex flex-column h-100 p-3 pb-3 text-white text-shadow-1">
+                    <img src="{{ post.image_2 }}">
+                </div>
+              </div>
+            </div>
+      
+            <div class="col">
+              <div class="h-100" style="background-image: url('unsplash-photo-3.jpg');">
+                <div class="d-flex flex-column h-100 p-3 pb-3 text-shadow-1">
+                    <img src="{{ post.image_3 }}">
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+                <div class="h-100" style="background-image: url('unsplash-photo-1.jpg');">
+                  <div class="d-flex flex-column h-100 p-3 pb-3 text-white text-shadow-1">
+                    <img src="{{ post.image_4 }}">
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col">
+                <div class="h-100" style="background-image: url('unsplash-photo-2.jpg');">
+                  <div class="d-flex flex-column h-100 p-3 pb-3 text-white text-shadow-1">
+                    <img src="{{ post.image_5 }}">
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col">
+                <div class="h-100" style="background-image: url('unsplash-photo-3.jpg');">
+                  <div class="d-flex flex-column h-100 p-3 pb-3 text-shadow-1">
+                    <img src="{{ post.image_6 }}">
+                  </div>
+                </div>
+              </div>
+        </div>
+{% include "footer.html" %}
